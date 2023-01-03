@@ -25,17 +25,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-
     background-color: #F2F2F2;
     width: 270px;
     height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-
     transition: width 0.3s, heigth 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -59,7 +57,7 @@ div#formulario > h1 {
 
 div#formulario > p {
     text-align: center;
-    margin: 0px 20px 10px 20px;
+    margin: 0px 20px 0px 20px;
 }
 
 div#formulario > p#mensagem {
@@ -70,11 +68,29 @@ form > div.campo {
     background-color: #03A688;
     height: 35px;
     border-radius: 5px;
-    margin: 5px 5px;
+    margin: 10px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+   color: white;
+   font-size: 1.5em;
+   padding: 5px;
+   text-align: center;
+}
+
+div.campo > input {
+    background-color: #B4D9CE;
+    font-size: 1em;
+    width: calc(100% - 39px);
+    height: 94%;
+    border: 1px solid #03A688;
+    border-radius: 5px;
+    padding: 5px;
+    transform: translateY(-6px);
 }
 
 form > input[type=submit] {
